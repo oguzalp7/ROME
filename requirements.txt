@@ -7,4 +7,7 @@ scipy
 imutils
 playsound
 cmake
+Pillow
+DateTime
+argparse
 dlib==19.21.0
