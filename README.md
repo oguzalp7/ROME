@@ -7,3 +7,4 @@
 * Extract and make sure to put the "shape_predictor_68_face_landmarks.dat" to Blink/src directory.
 # Usage
 * Neither of both program doesn't require any arguments from commmand line.
+* To stop the data collection process from camera, user required to press "q" button in the display window.
