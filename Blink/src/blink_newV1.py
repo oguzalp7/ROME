@@ -156,7 +156,7 @@ def insert_database(sql_command, patient_data):
     PARAMS: sql command(INSERT), patient data: consisting a tuple of name, surname and phone number.
     """
     # specify and connect to the database.
-    db = mysql.connector.connect(host="localhost", user="root", password="root", database="vehware-rome")
+    db = mysql.connector.connect(host="", user="", password="", database="vehware-rome")
     cursor = db.cursor(buffered=True)
 
     cursor.execute(sql_command, patient_data)  # execute sql command from cursor
@@ -171,7 +171,7 @@ def get_patient_id(sql_command):
     PARAM: SQL command (SELECT)
     """
     # open and connect database connection
-    db = mysql.connector.connect(host="localhost", user="root", password="root", database="vehware-rome")
+    db = mysql.connector.connect(host="", user="", password="", database="vehware-rome")
     cursor = db.cursor(buffered=True)
 
     # execute sql command in argumant of the function.
@@ -190,7 +190,7 @@ def insert_blink_data(sql_command, data_itself, patient_id, blink_delay):
     PARAMS: SQL Command(INSERT), dictionary, patient id that we queried, blink delay
     """
     # connect database
-    db = mysql.connector.connect(host="localhost", user="root", password="root", database="vehware-rome")
+    db = mysql.connector.connect(host="", user="", password="", database="vehware-rome")
     cursor = db.cursor(buffered=True)
 
     # iterate over keys of dictionary
