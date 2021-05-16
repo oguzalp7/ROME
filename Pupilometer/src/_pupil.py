@@ -300,7 +300,7 @@ def insert_database(sql_command, patient_data):
     PARAMS: sql command(INSERT), patient data: consisting a tuple of name, surname and phone number.
     """
     # specify and connect to the database.
-    db = mysql.connector.connect(host="localhost", user="root", password="root", database="vehware-rome")
+    db = mysql.connector.connect(host="", user="", password="", database="vehware-rome")
     cursor = db.cursor(buffered=True)
 
     cursor.execute(sql_command, patient_data)  # execute sql command from cursor
@@ -315,7 +315,7 @@ def get_patient_id(sql_command):
     PARAM: SQL command (SELECT)
     """
     # specify and connect to the database.
-    db = mysql.connector.connect(host="localhost", user="root", password="root", database="vehware-rome")
+    db = mysql.connector.connect(host="", user="", password="", database="vehware-rome")
     cursor = db.cursor(buffered=True)
 
     cursor.execute(sql_command)  # execute sql command in argumant of the function.
@@ -332,7 +332,7 @@ def insert_pupil_data(sql_command, data_itself, patient_id):
     PARAMS: SQL Command(INSERT), dictionary, patient id that we queried
     """
     # connect database
-    db = mysql.connector.connect(host="localhost", user="root", password="root", database="vehware-rome")
+    db = mysql.connector.connect(host="", user="", password="", database="vehware-rome")
     cursor = db.cursor(buffered=True)
 
     # iterate over keys of dictionary
