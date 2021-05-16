@@ -17,7 +17,7 @@
 # Usage
 * Neither of both program doesn't require any arguments from commmand line.
 * To stop the data collection process from camera, user required to press "q" button in the display window.
-* The usage of the Gui is explained in blink_readme.txt inside the Gui folder
+* The usage of the Gui is explained in blink_readme.txt
 # License
 * ROME System is licensed under GNU General Public License v3.0
 
