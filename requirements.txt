@@ -1,0 +1,10 @@
+opencv-python
+numpy
+matplotlib
+mysql-connector
+pyserial
+scipy
+imutils
+playsound
+cmake
+dlib==19.21.0
