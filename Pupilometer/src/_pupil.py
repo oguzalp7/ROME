@@ -85,7 +85,7 @@ def area_of_circle(diameter):
     PARAMS: diameter (detected blobs are returning coordinates of the blob and diameter of the blob)
     """
     radius = diameter / 2  # keypoint.size returns a diameter, we need radius so diameter/2 = radius
-    area = np.pow(radius, 2) * math.pi  # circle area = radius*radius*PI
+    area = np.power(radius, 2) * math.pi  # circle area = radius*radius*PI
     return area  # return
 
 
