@@ -118,7 +118,7 @@ class PupilDilation(object):
         self.detector = cv2.SimpleBlobDetector_create(self.detector_params)
 
         self.cap = cv2.VideoCapture(0)  # specify the camera that we're going to use and open it.
-        time.sleep(1)  # warm the camera a bit
+        time.sleep(1)  # warm up the camera a bit
         # To use the serial bus comment out this section.
         # TODO: set the baudrate closer to the camera fps frequincy. Values between 4800 and 115200 must be tested.
         # self.serial_dev = serial.Serial(self.port, self.baud, timeout=0.1)
